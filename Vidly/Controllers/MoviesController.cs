@@ -17,6 +17,11 @@ namespace Vidly.Controllers
             return View(movie);
         }
 
+        public ActionResult ByReleaseDate(int year, int month)
+        {
+            return Content(year + "/" + month);
+        }
+
         public ActionResult Edit(int MovieId)
         {
             return Content("Id = " + MovieId);
